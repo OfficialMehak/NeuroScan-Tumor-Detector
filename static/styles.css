@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bg1.avif'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.prediction {
+    margin-top: 20px;
+}
+
+.predicted-class {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.explanation {
+    margin-top: 20px;
+}
+
+.back {
+    margin-top: 20px;
+}
+
+.back a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
