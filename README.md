@@ -18,18 +18,23 @@ Explanatory Insights: Upon prediction, users are provided with detailed explanat
 
 # Usage
 1. Upload the Scanned image of the Brain MRI image.
+   
    ![ss2](https://github.com/OfficialMehak/NeuroScan-Tumor-Detector/assets/159048970/a36269d0-1a46-447c-9ca6-944c3000b913)
+   
 2. Click on the "Upload and Predict" button.
+   
    ![ss3](https://github.com/OfficialMehak/NeuroScan-Tumor-Detector/assets/159048970/8bb9f2c9-6074-423c-8def-f7d04b3683fb)
+   
 3. The application will display whether the patient is likely to have a brain tumor or not along with its type and explanation.
+   
    ![ss4](https://github.com/OfficialMehak/NeuroScan-Tumor-Detector/assets/159048970/3edb8878-b7af-4360-aed7-543ee7adaf3a)
 
 # Files
-app.py: Contains the Flask application code.
-templates/: Contains HTML templates.
-static/: Contains CSS styles.
-brain_tumor_classification_model.keras: Trained machine learning model.
-requirements.txt: List of Python dependencies.
+- `app.py`: Contains the Flask application code.
+- `templates/`: Contains HTML templates.
+- `static/`: Contains CSS styles.
+- `brain_tumor_classification_model.keras`: Trained machine learning model.
+- `requirements.txt`: List of Python dependencies.
 
 # Contributions
 Contributions to the NeuroScan Tumor Detector project are welcome! Whether it's enhancing the model's accuracy, improving the user interface, or adding new features, we encourage collaboration to make brain tumor diagnosis more accessible and effective.
