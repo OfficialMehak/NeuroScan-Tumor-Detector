@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+            body {
+   
+    background-image: url('https://img.freepik.com/free-vector/blue-technology-background-creative-lighting-template-background-vector-illustration_1142-11823.jpg?size=626&ext=jpg&ga=GA1.1.1140102648.1710659930&semt=ais_user'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+}
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .prediction p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .explanation {
+            text-align: left;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .back {
+            margin-top: 20px;
+        }
+        .back a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor Classification Result</h1>
+        
+        <!-- Display selected image -->
+        <img src="{{ url_for('static', filename='uploaded_image.jpg') }}" alt="Uploaded Image">
+
+        <!-- Display prediction -->
+        <div class="prediction">
+            <p>Prediction:</p>
+            <p>{{ prediction }}</p>
+        </div>
+        
+        <!-- Display explanation -->
+        <div class="explanation">
+            <h2>Explanation:</h2>
+            <p>{{ explanation }}</p>
+        </div>
+
+        <!-- Link to go back to the upload page -->
+        <div class="back">
+            <a href="/">Back to Upload</a>
+        </div>
+    </div>
+</body>
+</html>
